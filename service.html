@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Services - M&K Events</title>
+</head>
+<body>
+
+    <header class="logo-header">
+        <img src="images/logo.jpeg" alt="M&K Caterings Logo" class="logo">
+        <h1 class="brand-name">M&K Events</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="service.html" class="active">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+
+
+    <section class="services-section">
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="images/service1.jpg" alt="Service 1" class="slide-image">
+            </div>
+            <div class="slides fade">
+                <img src="images/service2.jpg" alt="Service 2" class="slide-image">
+            </div>
+            <div class="slides fade">
+                <img src="images/service3.jpg" alt="Service 3" class="slide-image">
+            </div>
+               <div class="slides fade">
+                <img src="images/service4.jpg" alt="Service 1" class="slide-image">
+            </div>
+            <div class="slides fade">
+                <img src="images/service5.jpg" alt="Service 2" class="slide-image">
+            </div>
+            <div class="slides fade">
+                <img src="images/service6.jpg" alt="Service 3" class="slide-image">
+            </div>
+        </div>
+        <div class="services-content">
+            <h2>Our Services</h2>
+            <p>
+                At M&K Caterings, we provide a variety of services to make your events memorable:
+            </p>
+            <ul>
+                <li>Customized menus tailored to your preferences</li>
+                <li>Professional catering for weddings, birthdays, and corporate events</li>
+                <li>Event planning and decoration services</li>
+                <li>High-quality, fresh, and locally-sourced ingredients</li>
+                <li>Dedicated customer service for seamless execution</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="contact-info">
+            <p>📞 <strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>📍 <strong>Location:</strong> <a href="https://goo.gl/maps/xyz123" target="_blank">View on Google Maps</a></p>
+        </div>
+        <p>&copy; 2024 M&K Caterings. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slides");
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+            setTimeout(showSlides, 4000);
+        }
+
+        showSlides();
+    </script>
+    
+    
+</body>
+</html>

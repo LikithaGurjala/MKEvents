@@ -1,0 +1,338 @@
+/* General Website Styles */
+body {
+    background-image: url('images/cake.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.brand-name {
+    font-family: cursive;         
+    font-size: 3rem;             
+    font-style: italic;          
+    color: #8A2BE2;               
+    text-align: center;          
+    margin: 20px 0;               
+    letter-spacing: 2px;          
+}
+/* Header with Logo Styles */
+.logo-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #333;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+.brand-name {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li {
+    display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.navbar ul li a.active {
+    background-color: #d3d3d3; 
+    color: black;
+}
+.navbar ul li a:hover {
+    background-color: #d3d3d3;
+    color: black;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: rgba(230, 247, 255, 0.8);
+}
+.slideshow {
+    flex: 1;
+    max-width: 50%;
+}
+.slideshow .slide {
+    width: 100%;
+    display: none;
+}
+.content {
+    flex: 1;
+    text-align: left;
+}
+.content h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* About Us Page Styles */
+.aboutus-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+   background-color: rgba(230, 247, 255, 0.8); 
+}
+
+.video-container {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 800px;
+    text-align: center;
+    color: #333;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Events Page Styles */
+.events-content {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(230, 247, 255, 0.8); 
+}
+
+.events-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.event-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.event-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-item p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Contact Form Section Styles */
+.contact-section {
+    padding: 40px 20px;
+    background-color: rgba(230, 247, 255, 0.8); 
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+}
+
+.contact-form {
+    width: 90%; 
+    max-width: 400px;
+}
+
+.contact-form label {
+    display: block; 
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; 
+}
+
+.contact-form textarea {
+    resize: none; 
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Services Section Styles */
+.services-section {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    background-color: rgba(230, 247, 255, 0.8); 
+}
+
+.slideshow-container {
+    flex: 1;
+    position: relative;
+    max-width: 50%;
+}
+
+.slides {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides .slide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fade 2s ease-in-out; 
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.services-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.services-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.services-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #333;
+}
+
+.services-content ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* newly updated */
+
+
+
+/* Footer Styles */
+footer {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+footer .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    margin-bottom: 10px;
+}
+footer .contact-info a {
+    color: #333; 
+    text-decoration: none;
+    font-weight: bold;
+}
+footer .contact-info a:hover {
+    color: #FF1493; 
+}

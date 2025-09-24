@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home - M&K Events</title>
+</head>
+<body>
+    <header class="logo-header">
+        <img src="images/logo.jpeg" alt="M&K Caterings Logo" class="logo">
+        <h1 class="brand-name">M&K Events</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+             <li><a href="events.html">Events</a></li>
+            <li><a href="service.html">Services</a></li>         
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="main-content">
+        <div class="slideshow">
+            <img src="images/catering.jpg" alt="Delicious Catering" class="slide">
+            <img src="images/event.jpg" alt="Event Setup" class="slide">
+            <img src="images/event2.jpg" alt="Event Setup" class="slide">
+            <img src="images/food.jpg" alt="Cuisine Variety" class="slide">
+        </div>
+        <div class="content">
+            <h2>M&K Events: Where Dreams Become Celebrations</h2>
+            <p>
+              
+Every event tells a story—let us help you write yours. At M&K Events, we don't just plan events; we craft unforgettable moments that leave lasting impressions.</p>
+
+<p>✨ Your Vision, Our Mission
+Whether it’s an elegant wedding, a high-energy corporate gala, or an intimate private party, we transform your ideas into reality with creativity, precision, and a touch of magic.</p>
+
+<p>🍴 Flavors to Remember
+Our curated menus are more than food—they’re an experience. Every bite is crafted to delight and inspire.</p>
+
+<p>🎨 Tailored Perfection
+From concept to execution, every detail is personalized to fit your style and preferences. Our dedicated team is here to ensure your event feels uniquely you.</p>
+
+<p>💫 Why M&K Events?
+Because you deserve nothing less than extraordinary. Let us turn your special day into an unforgettable celebration!
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <p>📞 <strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+            <p>📍 <strong>Location:</strong> <a href="https://goo.gl/maps/xyz123" target="_blank">View on Google Maps</a></p>
+        </div>
+        <p>&copy; 2024 M&K Caterings. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>
